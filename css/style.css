@@ -1,0 +1,263 @@
+/* ================================= 
+  Base layout styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+    font-size: .95em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    line-height: 1.65;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+    background: #f6fafa;
+    background-position: center;
+}
+
+ul {
+    padding: 0px;
+}
+
+/* ================================= 
+ Navigation layout styles
+==================================== */
+
+.name {
+    font-size: 1.65em;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+    margin-bottom: 6px;
+    display: block;
+    list-style-type: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.main-nav a {
+    font-size: 1em;
+    font-weight: 700;
+	color: #070707;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+
+/* ================================= 
+ Portfolio section styles
+==================================== */
+
+
+.Portfolio {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.marketing-page {
+    text-align: center;
+    font-size: 16px;
+}
+
+.search-page {
+    text-align: center;
+    font-size: 16px;
+}
+
+.travel-app {
+    text-align: center;
+    font-size: 16px;
+}
+
+.map-spot {
+    text-align: center;
+    font-size: 16px;
+}
+
+.photo-gallery {
+    text-align: center;
+    font-size: 16px;
+}
+
+.calculator-device {
+    text-align: center;
+    font-size: 16px;
+}
+
+.logo {
+    display: block;
+    max-width: 300px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.marketing {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+}
+
+.search {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+}
+
+.travel {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+}
+
+.map {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+}
+
+.photo {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+}
+
+.calculator {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+}
+
+/* ================================= 
+  Footer layout styles
+==================================== */
+
+.Contact {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 16px;
+}
+
+.contactdetails {
+    padding-top: 1em;
+	padding-bottom: 1em;
+    background: #f6fafa;
+    margin-top: 65px;
+}
+
+.phone a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.email a {
+    text-align: center;
+    text-decoration: none;
+    margin-top: -10px;
+    color: black;
+}
+
+
+#footer-line {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+#footer-btp {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+
+}
+
+#footer-name {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.footer-nav,
+.footer-nav li {
+    display: inline;
+}
+
+/* ================================= 
+ float clearfix
+==================================== */
+
+.group::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+  @media (min-width: 768px) {
+
+	.container {
+		width: 80%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+}
+ 
