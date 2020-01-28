@@ -14,21 +14,31 @@ p {
     line-height: 1.65;
 }
 
+.intro {
+    font-size: 17px;
+}
+
 body {
     font-family: 'roboto', sans-serif;
 }
 
 
 .container {
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.col {
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 .main-header {
-	padding-top: 1.5em;
+	padding-top: 3em;
 	padding-bottom: 1.5em;
     background: #f6fafa;
     background-position: center;
+    margin: 0 auto;
 }
 
 ul {
@@ -68,7 +78,6 @@ ul {
 .main-nav a:hover {
 	color: #093a58;
 }
-
 
 /* ================================= 
  Portfolio section styles
@@ -175,6 +184,7 @@ ul {
   Footer layout styles
 ==================================== */
 
+
 .Contact {
     font-size: 1em;
     text-align: center;
@@ -184,11 +194,13 @@ ul {
     padding-top: 16px;
 }
 
-.contactdetails {
+.main-footer {
     padding-top: 1em;
-	padding-bottom: 1em;
+	padding-bottom: 48px;
     background: #f6fafa;
     margin-top: 65px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 .phone a {
@@ -222,10 +234,11 @@ ul {
 
 }
 
-#footer-name {
+.footer-name {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
     float: left;
@@ -234,6 +247,12 @@ ul {
 .footer-nav,
 .footer-nav li {
     display: inline;
+}
+
+#footer-home,
+#footer-portfolio,
+#footer-contact {
+    display: none;
 }
 
 /* ================================= 
@@ -253,11 +272,86 @@ ul {
 
   @media (min-width: 768px) {
 
-	.container {
-		width: 80%;
-		max-width: 1024px;
-		margin: 0 auto;
-	}
+    
+    .primary,
+    .secondary,
+    .tertiary {
+		width: 50%;
+    }
+    
+    .container {
+		width: 95%;
+        margin: 0 auto;
+    }
+    
+    .profile,
+    .col {
+		float: left;
+    }
+
+    .logo {
+        float: right;
+        width: 40%;
+        padding-right: 8px;
+    }
+
+    .intro {
+        width: 60%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        float: left;
+        text-align: left;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .main-nav {
+        text-align: center;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        list-style-type: none;
+        background-color: #f6fafa;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #footer-home,
+    #footer-portfolio,
+    #footer-contact {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    #footer-contact {
+        margin-right: 0;
+    }
+
+
+    .footer-nav ul li {
+        float: left;
+    }
+
+    #footer-btp {
+        display: none;
+    }
+
+    .clearfix1::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
 
 }
  
