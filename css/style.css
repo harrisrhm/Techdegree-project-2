@@ -20,7 +20,7 @@ p {
 }
 
 body {
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto', 'Bebas Neue', 'Marck Script', sans-serif, cursive;
 }
 
 
@@ -37,13 +37,13 @@ body {
 .main-header {
 	padding-top: 3em;
 	padding-bottom: 1.5em;
-    background: #f6fafa;
+    background: rgb(204, 245, 239);
     background-position: center;
     margin: 0 auto;
 }
 
 ul {
-    padding: 0px;
+    padding: 0px;  
 }
 
 /* ================================= 
@@ -51,7 +51,8 @@ ul {
 ==================================== */
 
 .name {
-    font-size: 1.65em;
+    font-size: 35px;
+    font-family: 'Mark Script', cursive;
     text-align: center;
     margin-top: -20px;
     margin-bottom: 25px;
@@ -65,12 +66,15 @@ ul {
 .main-nav li {
 	text-align: center;
 	background: #fff;
-	margin-top: 6px;
-    margin-bottom: 6px;
-    /*display: block;*/
     list-style-type: none;
     padding-top: 12px;
     padding-bottom: 12px;
+    margin: 6px 8px;
+    /*margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 8px;
+    margin-left: 8px;
+    display: block;*/  
 }
 
 .main-nav a {
@@ -82,11 +86,15 @@ ul {
 }
 
 .main-nav a:hover {
-	color: #093a58;
+	color: #58090d;
+}
+
+.main-nav ul {
+    margin-bottom: 50px;
 }
 
 /* ================================= 
- Portfolio section styles
+ Portfolio and skills section styles
 ==================================== */
 
 
@@ -94,8 +102,33 @@ ul {
     font-size: 1em;
     text-align: center;
     text-transform: uppercase;
+    margin: 50px 0;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+}
+
+.Skills {
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    
+}
+
+.Skill ul {
+    text-align: center;
+    line-height: 2;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    list-style-type: none;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 35px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
 }
 
 .marketing-page {
@@ -130,61 +163,61 @@ ul {
 
 .logo {
     display: block;
-    /* max-width: 300px; */
+    width: 80%;
     margin: 30px auto;
     /* margin-top: 30px;
     margin-bottom: 30px;
     margin-left: auto;
-    margin-right: auto; */
-    width: 80%;
+    margin-right: auto; */  
+    /* max-width: 300px; */
 }
 
 .marketing {
     display: block;
     margin: 30px auto;
     width: 100%;
-    padding-left: none;
-    padding-right: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .search {
     display: block;
     margin: 30px auto;
     width: 100%;
-    padding-left: none;
-    padding-right: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .travel {
     display: block;
     margin: 30px auto;
     width: 100%;
-    padding-left: none;
-    padding-right: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .map {
     display: block;
     margin: 30px auto;
     width: 100%;
-    padding-left: none;
-    padding-right: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .photo {
     display: block;
     margin: 30px auto;
     width: 100%;
-    padding-left: none;
-    padding-right: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .calculator {
     display: block;
     margin: 30px auto;
     width: 100%;
-    padding-left: none;
-    padding-right: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* ================================= 
@@ -196,18 +229,20 @@ ul {
     font-size: 1em;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin: 35px 0;
     padding-top: 16px;
+    /*margin-top: 35px;
+    margin-bottom: 35px;*/
 }
 
 .main-footer {
-    padding-top: 1em;
-	padding-bottom: 48px;
-    background: #f6fafa;
+    background: rgb(204, 245, 239);
     margin-top: 65px;
+    padding: 1em 8px 48px 8px;
+    /*padding-top: 1em;
+    padding-bottom: 48px;
     padding-right: 8px;
-    padding-left: 8px;
+    padding-left: 8px;*/
 }
 
 .phone a {
@@ -226,9 +261,13 @@ ul {
 }
 
 
-#footer-line {
+hr {
     margin-top: 50px;
     margin-bottom: 20px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -260,12 +299,13 @@ ul {
 
 #footer-home,
 #footer-portfolio,
-#footer-contact {
+#footer-contact,
+#footer-skills {
     display: none;
 }
 
 /* ================================= 
- float clearfix
+ float clearfix for mobile viewpoint
 ==================================== */
 
 .group::after {
@@ -273,7 +313,6 @@ ul {
     clear: both;
     display: table;
   }
-
 
 /* ================================= 
   Media Queries for 768px breakpoint
@@ -307,29 +346,48 @@ ul {
     .intro {
         width: 60%;
         margin: 30px 0;
-        /* margin-top: 40px;
-        margin-bottom: 40px; */
         float: left;
         text-align: left;
         padding-right: 18px;
         padding-left: 18px;
+        /* margin-top: 40px;
+        margin-bottom: 40px; */
     }
 
     .main-nav {
         text-align: center;
     }
 
+    .name {
+        margin-bottom: -6px;
+    }
+
     .main-nav li {
         display: inline-block;
         list-style-type: none;
-        background-color: #f6fafa;
-        margin-left: 20px;
-        margin-right: 20px;
+        background-color: rgb(204, 245, 239);
+        margin: 0 20px;
+        /*margin-left: 20px;
+        margin-right: 20px;*/
     }
+
+    .main-nav ul {
+        margin-bottom: 10px;
+    }
+
+    .Skills,
+    .Skill {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+
 
     #footer-home,
     #footer-portfolio,
-    #footer-contact {
+    #footer-contact,
+    #footer-skills {
         display: inline-block;
         text-decoration: none;
         text-transform: uppercase;
@@ -338,7 +396,7 @@ ul {
         margin-right: 20px;
     }
 
-    #footer-contact {
+    #footer-skills {
         margin-right: 0;
     }
 
@@ -366,10 +424,8 @@ ul {
         clear: both;
         display: table;
       }
-
 }
  
-
 /* ================================= 
   Media Queries for 1024px breakpoint
 ==================================== */
@@ -377,22 +433,21 @@ ul {
 @media (min-width: 1024px) {
 
    .logo {
+        padding-right: 8px; 
+        padding-left: 8px;   
         /*float: right;
         width: 100%;
-        height: 200px;*/
-        padding-right: 8px; 
-        padding-left: 8px;    
+        height: 200px;*/ 
     }
 
     .intro {
+        padding-right: 25px;
+        padding-left: 8px;
         /* width: 60%;
         margin-top: 40px;
         margin-bottom: 40px;
         float: left;
-        text-align: left; */
-        padding-right: 25px;
-        padding-left: 8px;
-        
+        text-align: left; */ 
     }
 
     .container {
@@ -409,16 +464,29 @@ ul {
     }
 
     .col {
-		float: left;
+        float: left;
+        min-height: 403px;
+        /*min-height: 405px;*/
     }
 
     .main-nav li {
        float: left;
+       margin: 7px 20px 0 20px;
+       padding: 0;
+       font-size: 18px;
+       /*margin: 0 20px;
+       margin-top: 7px;*/
     }
 
     .name {
-        float: left;
-        /*display: inline-block;
+        text-align: left;
+        display: inline-block;
+        line-height: 1.7;
+        margin: 0;  
+        padding-left: 8px;
+        font-size: 35px;
+        /*float: left;
+        display: inline-block;
         margin: 0;*/
     }
 
@@ -426,13 +494,47 @@ ul {
         float: right;
     }
 
+    .wrapper {
+        margin: 0 15px;
+        padding-bottom: 25px;
+        background-color: white;
+        /*margin-right: 15px;
+        margin-left: 15px;*/
+    }
+
+    .wrap {
+        background-color:rgb(204, 245, 239);
+        
+    }
+
+    .Portfolio {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    .main-footer {
+        margin-top: 0;
+    }
+
+    .Skills {
+        margin-top: 30px;      
+    }
+
+    #footer-portfolio,
+    #footer-home {
+        padding-right: 4px;
+    }
+
+    #footer-home,
+    hr {
+        padding-right: 6px;
+    }
+
     .clearfix::after {
         content: "";
         clear: both;
         display: table;
-      }
-
-  
+      } 
 }  
     
 
